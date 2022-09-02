@@ -70,7 +70,7 @@ figcaption {
   margin-bottom: 0;
   color: #E9EAEC;
   font-family: 'Bebas Neue', cursive;
-  font-size: 30px;
+  font-size: 35px;
   padding-left: 0;
 }
 
@@ -98,7 +98,6 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .card {
@@ -158,27 +157,17 @@ a {
 .article-text {
   font-family: 'Merriweather', serif;
   max-width: 95%;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .line-break {
   border-bottom: 1px solid grey;
 }
-/* Media Queries */
-@media(min-width:970px) {
-   .header-container {
-      flex-direction: row;
-    }
-   .header-h1 {
-      margin-top: 0;
-   }
-   header {
-     height: 110px;
-   }
-   .wrapper {
-     max-width: 80%
-   }
+
+.lead {
+  font-size: 1.5rem;
 }
+/* Media Queries */
 
 @media(min-width:1350px) {
   .article-text {
@@ -187,4 +176,28 @@ a {
   .article-img-top {
     max-width: 100%;
   }
+}
+
+@media(min-width: 1060px) {
+  .article-text {
+    font-size: 1.25rem;
+  }
+  .header-container {
+    flex-direction: row;
+  }
+ .header-h1 {
+    margin-top: 0;
+ }
+ header {
+   height: 110px;
+ }
+ .wrapper {
+   max-width: 80%
+ }
+ .lead {
+  font-size: 1.25rem;
+ }
+ .navbar-container {
+  font-size: 30px;
+ } 
 }
