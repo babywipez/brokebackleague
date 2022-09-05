@@ -167,6 +167,29 @@ a {
 .lead {
   font-size: 1.5rem;
 }
+
+.draftboard-wrapper {
+  display: flex;
+}
+
+.carousel-wrapper {
+  max-width: 1000px;
+}
+
+.name-navigation {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #333652;
+  padding-top: 20px;
+  border-bottom: 6px solid #90ADC6;
+  border-top: 6px solid #FAD02C;
+  box-shadow: 0px 3px 80px 10px gray;
+  text-shadow: 2px 2px black;
+}
+
+
 /* Media Queries */
 
 @media(min-width:1350px) {
