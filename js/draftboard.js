@@ -37,16 +37,18 @@ const team1 = [
     },
 ];
 
-let team1html = document.querySelector('.team-1');
+// const team1Div = document.getElementById('team-1').getElementsByTagName('ul')[0];
 
-const displayTeam = (array) => {
-    for (let i=0; i<array.length; i++) {
-        return `<li>${array[i].name} - ${array[i].position}</li>`
-    }
+for (let i=0; i<team1.length; i++) {
+    const node = document.createElement('li');
+    const textnode = document.createTextNode(`${team1[i].name} - ${team1[i].position}`);
+    node.appendChild(textnode);
+    document.getElementById('team-1').appendChild(node);
 };
 
-team1html.innerHTML += displayTeam(team1);
-
-// for (let i=0; i<team1.length; i++) {
-//     team1html.innerHTML += `<li>${team1[i].name} - ${team1[i].position}</li>`
-// };
+for (let i = 0; i < team1.length; i++) {
+    const node = document.createElement('li');
+    const textnode = document.createTextNode(`${team1[i].name} - ${team1[i].position}`);
+    node.appendChild(textnode);
+    document.getElementById('team-2').appendChild(node);
+};
